@@ -1,5 +1,6 @@
+import 'package:devyy_front/pages/splashPage.dart';
 import 'package:flutter/material.dart';
-import 'package:devyy_front/home/devvyHomePage.dart';
+import 'package:devyy_front/pages/devvyHomePage.dart';
 
 void main() {
   runApp(const Devyy());
@@ -10,12 +11,10 @@ class Devyy extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Devyy',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const DevvyHomePage(title: 'Devyy'),
+      home: Splash()
+      //const DevvyHomePage(title: 'Devyy'),
     );
   }
 }
